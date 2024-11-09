@@ -1,0 +1,7 @@
+###
+
+# curl -X POST http://localhost:8080/join
+POST http://localhost:8080/join
+
+###
+
