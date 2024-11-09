@@ -7,13 +7,12 @@
     <title>Onlayn navbat</title>
 </head>
 <body>
-<div class="row justify-content-center">
+<div class="row justify-content-center mt-5">
     <div class="col-12 col-md-7 col-lg-5">
-        <div class="container text-center mt-5">
+        <div class="container text-center bg-white shadow rounded-4 p-3">
             <h1 class="fw-bold text-center">Onlayn navbatga yozilish</h1>
             {{if .Number}}
-            <div class="alert alert-success" role="alert"> Navbat raqamingiz: {{.Number}}
-            </div>
+            <div class="alert alert-success" role="alert"> Navbat raqamingiz: {{.Number}}</div>
             {{end}}
             <form action="/join" method="post">
                 <button type="submit" class="btn btn-primary">Ro'yxatdan o'tish</button>
