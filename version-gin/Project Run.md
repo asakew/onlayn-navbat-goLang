@@ -3,7 +3,7 @@
 go run app/main.go
 ```
 
-## Stop Terminal
+## Stop Project/Terminal
 ```bash
 CTRL + C
 ```
