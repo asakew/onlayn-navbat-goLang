@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <title>Onlayn navbat</title>
+</head>
+<body>
+<div class="container mt-5">
+    <h1>Onlayn navbatga yozilish</h1>
+
+    {{if .Number}}
+    <div class="alert alert-success" role="alert">
+        Navbat raqamingiz: {{.Number}}
+    </div>
+    {{end}}
+
+    <form action="/join" method="post">
+        <button type="submit" class="btn btn-primary">Ro'yxatdan o'tish</button>
+    </form>
+
+    <h2 class="mt-5">Joriy navbat:</h2>
+    <ul class="list-group mt-3">
+        {{range .Queue}}
+        <li class="list-group-item">Raqam: {{.Number}} — Voqt: {{.Time.Format "2006-01-02 15:04:05"}}</li>
+        {{end}}
+    </ul>
+</div>
+</body>
+</html>

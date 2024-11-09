@@ -1,8 +1,11 @@
 # Onlayn navbatga yozilish
+Agar foydalanuvchi navbatda turgan bo'lsa, tasodifiy raqam yaratilidi.
 - Backend: goLang, GIN
-- Frontend: HTML, Bootstrap
+- Frontend: GIN template, Bootstrap
 
 ________________________________________________
-# Скрипт, который записывается на онлайн очередь
+
+# Который записывается на онлайн очередь
+Если пользователь находится в очереди, будет сгенерировано случайное число.
 - Backend: goLang, GIN
-- Frontend: HTML, Bootstrap
+- Frontend: GIN template, Bootstrap
