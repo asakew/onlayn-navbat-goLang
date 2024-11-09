@@ -10,5 +10,5 @@ CTRL + C
 
 ## Build app
 ```bash
-        go get main.go
+go build app/main.go
 ```
