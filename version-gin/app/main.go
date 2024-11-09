@@ -5,6 +5,7 @@ import (
 	"math/rand"
 	"net/http"
 	"os"
+	"sort"
 	"time"
 
 	"github.com/gin-gonic/gin"
@@ -29,7 +30,7 @@ func main() {
 	// Asosiy sahifa uchun marshrutni o'rnatish
 	router.GET("/", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "index.html", TemplateData{
-			Queue: queue,
+			Queue: sortQueueByTime(queue),
 		})
 	})
 
@@ -40,7 +41,7 @@ func main() {
 
 		c.HTML(http.StatusOK, "index.html", TemplateData{
 			Number: number,
-			Queue:  queue,
+			Queue:  sortQueueByTime(queue),
 		})
 	})
 
@@ -48,9 +49,20 @@ func main() {
 	router.LoadHTMLGlob("web/templates/*")
 
 	// Serverni ishga tushirish
-	fmt.Fprint(os.Stderr, "Server is starting: http://localhost:8080\n")
-	err := router.Run(":8080")
+	_, err := fmt.Fprint(os.Stderr, "Server is starting: http://localhost:8080\n")
 	if err != nil {
 		return
 	}
+	err = router.Run(":8080")
+	if err != nil {
+		return
+	}
+}
+
+// Yangi vaqtlarni qo'shish voqtida navbatlarni yuqoridan saralash
+func sortQueueByTime(queue []QueueItem) []QueueItem {
+	sort.Slice(queue, func(i, j int) bool {
+		return queue[i].Time.After(queue[j].Time)
+	})
+	return queue
 }
