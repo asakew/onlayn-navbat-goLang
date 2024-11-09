@@ -25,11 +25,12 @@
     </form>
 
     <h2 class="mt-5">Joriy navbat:</h2>
-    <ul class="list-group mt-3">
-        {{range .Queue}}
-        <li class="list-group-item">Raqam: {{.Number}} — Voqt: {{.Time.Format "2006-01-02 15:04:05"}}</li>
-        {{end}}
-    </ul>
+        <ol class="list-group list-group-numbered mt-3">
+            {{range .Queue}}
+            <li class="list-group-item list-group-item-action ">Raqam: {{.Number}} — Voqt: {{.Time.Format "2006-01-02 15:04:05"}}</li>
+            {{end}}
+        </ol>
+
 </div>
 </body>
 </html>
