@@ -20,7 +20,7 @@
             <h2 class="fw-bold mt-5">Joriy navbat:</h2>
             <ul class="list-group list-group-flush mt-3">
                 {{range .Queue}}
-                <li class="list-group-item list-group-item-action"><div class="fs-5 fw-bold">Raqam: {{.Number}}</div><div class="text-muted">{{.Time.Format "2006.01.02, 15:04"}}</div></li>
+                <li class="list-group-item list-group-item-action"><div class="fs-5 fw-bold">{{.Number}}</div><div class="text-muted">{{.Time.Format "15:04 - 01.02.2006"}}</div></li>
                 {{end}}
             </ul>
         </div>
