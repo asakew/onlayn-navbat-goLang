@@ -1,8 +1,10 @@
 package main
 
 import (
+	"fmt"
 	"math/rand"
 	"net/http"
+	"os"
 	"time"
 
 	"github.com/gin-gonic/gin"
@@ -45,6 +47,8 @@ func main() {
 	// Shablonni o'rnatish
 	router.LoadHTMLGlob("web/templates/*")
 
+	// Serverni ishga tushirish
+	fmt.Fprint(os.Stderr, "Server is starting: http://localhost:8080\n")
 	err := router.Run(":8080")
 	if err != nil {
 		return
