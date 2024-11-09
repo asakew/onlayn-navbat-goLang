@@ -4,7 +4,7 @@ go run app/main.go
 ```
 
 ## Stop Project/Terminal
-```bash
+```keyboard
 CTRL + C
 ```
 
