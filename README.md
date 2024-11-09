@@ -6,7 +6,7 @@ Agar foydalanuvchi navbatda turgan bo'lsa, tasodifiy raqam yaratilidi.
 github: https://github.com/asakew/onlayn-navbat-goLang
 
 ## Screenshot:
-![localhost_8080_join.png](version-gin%2Fweb%2Fassets%2Fscreenshot%2Flocalhost_8080_join.png)
+![localhost_8080_.png](version-gin%2Fweb%2Fassets%2Fscreenshot%2Flocalhost_8080_.png)
 ________________________________________________
 
 # Онлайн очередь

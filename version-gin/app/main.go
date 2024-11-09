@@ -36,7 +36,7 @@ func main() {
 
 	// Navbatga yozish uchun so'rovni qayta ishlash
 	router.POST("/join", func(c *gin.Context) {
-		number := rand.Intn(1000) // Генерация случайного номера
+		number := rand.Intn(1000) // Tasodiy raqam yaratish
 		queue = append(queue, QueueItem{Number: number, Time: time.Now()})
 
 		c.HTML(http.StatusOK, "index.html", TemplateData{
