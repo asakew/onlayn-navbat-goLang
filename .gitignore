@@ -24,3 +24,4 @@ go.work.sum
 # env file
 .env
 version-gin/go.sum
+version-gin/web/.DS_Store
