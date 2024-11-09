@@ -8,7 +8,7 @@ Agar foydalanuvchi navbatda turgan bo'lsa, tasodifiy raqam yaratilidi.
 github: https://github.com/asakew/onlayn-navbat-goLang
 ________________________________________________
 
-# Который записывается на онлайн очередь
+# Онлайн очередь
 Если пользователь находится в очереди, будет сгенерировано случайное число.
 - Backend: goLang, GIN
 - Frontend: GIN template, Bootstrap
