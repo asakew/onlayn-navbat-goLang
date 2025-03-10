@@ -1,6 +1,6 @@
 Create a real-time online queuing system using Go (Gin Framework) for the backend and HTML/CSS/JavaScript for the frontend with the following requirements:
 
-1. Backend (GoLang/goFiber):
+1. Backend (GoLang/GIN Framework):
 - Implement an endpoint to handle queue registration
 - Generate and assign unique sequential numbers to users who join the queue
 - Maintain the current queue state and position tracking
