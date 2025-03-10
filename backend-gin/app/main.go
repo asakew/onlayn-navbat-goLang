@@ -2,6 +2,7 @@ package main
 
 import (
 	"log"
+	"net/http"
 	_ "net/http"
 	"time"
 
@@ -36,9 +37,15 @@ func main() {
 		MaxAge:           12 * time.Hour,
 	}))
 
-	// Static files for frontend
-	router.Static("/static", "./frontend")
-	router.StaticFile("/", "./frontend/index.html")
+	// Static files for web
+	router.Static("/static", "./web/static")
+	router.LoadHTMLGlob("web/templates/*")
+
+	router.GET("/", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "index.html", gin.H{
+			"title": "Main website",
+		})
+	})
 
 	// API routes
 	api := router.Group("/api")
