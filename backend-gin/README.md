@@ -1,0 +1,1 @@
+Asosan user aktive browserda ishlaydi. Ushbu sahifa o'zgargan vaqt vaqtning o'zgarishi bilan ham ishlaydi. 
