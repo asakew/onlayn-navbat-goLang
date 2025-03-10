@@ -13,3 +13,13 @@ ________________________________________________
 Если пользователь находится в очереди, будет сгенерировано число.
 - Backend: goLang, GIN Framework
 - Frontend: HTML, CSS, JS
+________________________________________________
+
+# Online Queue System
+Three Business Enhancements
+
+- queue management system
+- Real-time queue management with WebSocket support
+- Queue position tracking and status updates
+- Scalability and performance optimization
+
