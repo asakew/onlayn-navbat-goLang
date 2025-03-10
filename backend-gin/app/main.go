@@ -25,7 +25,7 @@ func main() {
 	router := gin.Default()
 
 	// Apply global middleware
-	router.Use(middleware.Logger())
+	//router.Use(middleware.Logger())
 	router.Use(middleware.RateLimiter())
 	router.Use(middleware.SessionMiddleware())
 	router.Use(cors.New(cors.Config{
