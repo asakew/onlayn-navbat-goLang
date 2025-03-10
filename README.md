@@ -10,6 +10,6 @@ github: https://github.com/asakew/onlayn-navbat-goLang
 ________________________________________________
 
 # Онлайн очередь
-Если пользователь находится в очереди, будет сгенерировано случайное число.
-- Backend: goLang, GIN
-- Frontend: GIN template, Bootstrap
+Если пользователь находится в очереди, будет сгенерировано число.
+- Backend: goLang, GIN Framework
+- Frontend: HTML, CSS, JS
