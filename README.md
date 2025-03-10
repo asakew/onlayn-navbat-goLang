@@ -18,8 +18,8 @@ ________________________________________________
 # Online Queue System
 Three Business Enhancements
 
-- queue management system
 - Real-time queue management with WebSocket support
 - Queue position tracking and status updates
 - Scalability and performance optimization
+- queue management system
 
