@@ -50,7 +50,10 @@ func (qm *QueueManager) BroadcastQueueState() {
 		for client := range qm.Clients {
 			err := client.WriteJSON(update)
 			if err != nil {
-				client.Close()
+				err := client.Close()
+				if err != nil {
+					return
+				}
 				delete(qm.Clients, client)
 			}
 		}
